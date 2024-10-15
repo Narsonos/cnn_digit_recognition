@@ -79,7 +79,7 @@ class App():
         predicted_class = torch.argmax(output, dim=1)
         print(predicted_class.item())
         print([f'{x[0]} = {x[1]:.2f}' for x in enumerate(F.softmax(output,dim=1)[0])])
-        #self.clear()
+        self.clear()
 
 
 
